@@ -1,13 +1,6 @@
 {
-    "name": "gufy/cpanel-php",
+    "name": "mitlageri/cpanel-php",
     "description": "Cpanel/WHM API for PHP",
-    "license": "MIT",
-    "authors": [
-        {
-            "name": "Mochamad Gufron",
-            "email": "mgufronefendi@gmail.com"
-        }
-    ],
     "require": {
         "php": ">=5.6.0",
         "guzzlehttp/guzzle":"^7"
@@ -19,6 +12,5 @@
         "psr-0": {
             "Gufy\\CpanelPhp\\": "src/"
         }
-    },
-    "minimum-stability": "stable"
+    }
 }
