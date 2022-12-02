@@ -319,6 +319,8 @@ class Cpanel implements CpanelInterface
             $headers['Authorization'] = 'WHM ' . $username . ':' . preg_replace("'(\r|\n|\s|\t)'", '', $this->getPassword());
         } elseif ('password' == $auth_type) {
             $headers['Authorization'] = 'Basic ' . base64_encode($username . ':' .$this->getPassword());
+        } elseif ('token' == $auth_type) {
+            $headers['Authorization'] = 'cpanel '.$username.':'.$this->getPassword();
         }
         return $headers;
     }
